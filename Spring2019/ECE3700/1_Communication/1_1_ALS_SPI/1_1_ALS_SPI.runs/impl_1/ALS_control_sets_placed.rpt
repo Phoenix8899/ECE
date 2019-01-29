@@ -1,0 +1,90 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Jan 24 12:23:19 2019
+| Host         : Phoenix8899 running 64-bit Ubuntu 18.04.1 LTS
+| Command      : report_control_sets -verbose -file ALS_control_sets_placed.rpt
+| Design       : ALS
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    23 |
+| Unused register locations in slices containing registers |   139 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           18 |
+|      4 |            1 |
+|      6 |            1 |
+|    16+ |            3 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               7 |            5 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              65 |           17 |
+| Yes          | No                    | No                     |              21 |           19 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              32 |            8 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------+---------------------+---------------------+------------------+----------------+
+|   Clock Signal  |    Enable Signal    |   Set/Reset Signal  | Slice Load Count | Bel Load Count |
++-----------------+---------------------+---------------------+------------------+----------------+
+|  SCLK_OBUF_BUFG | SPI1/d[15]_i_1_n_0  |                     |                1 |              1 |
+|  clk_IBUF_BUFG  |                     |                     |                1 |              1 |
+|  SCLK_OBUF_BUFG | SPI1/d[9]_i_1_n_0   |                     |                1 |              1 |
+|  SCLK_OBUF_BUFG | SPI1/d[8]_i_1_n_0   |                     |                1 |              1 |
+|  SCLK_OBUF_BUFG | SPI1/d[7]_i_1_n_0   |                     |                1 |              1 |
+|  SCLK_OBUF_BUFG | SPI1/d[6]_i_1_n_0   |                     |                1 |              1 |
+|  SCLK_OBUF_BUFG | SPI1/d[5]_i_1_n_0   |                     |                1 |              1 |
+|  SCLK_OBUF_BUFG | SPI1/d[4]_i_1_n_0   |                     |                1 |              1 |
+|  SCLK_OBUF_BUFG | SPI1/d[3]_i_1_n_0   |                     |                1 |              1 |
+|  SCLK_OBUF_BUFG | SPI1/d[2]_i_1_n_0   |                     |                1 |              1 |
+|  SCLK_OBUF_BUFG | SPI1/d[1]_i_1_n_0   |                     |                1 |              1 |
+|  SCLK_OBUF_BUFG | SPI1/d[14]_i_1_n_0  |                     |                1 |              1 |
+|  SCLK_OBUF_BUFG | SPI1/d[13]_i_1_n_0  |                     |                1 |              1 |
+|  SCLK_OBUF_BUFG | SPI1/d[12]_i_1_n_0  |                     |                1 |              1 |
+|  SCLK_OBUF_BUFG | SPI1/d[11]_i_1_n_0  |                     |                1 |              1 |
+|  SCLK_OBUF_BUFG | SPI1/d[10]_i_1_n_0  |                     |                1 |              1 |
+|  SCLK_OBUF_BUFG | SPI1/d[0]_i_1_n_0   |                     |                1 |              1 |
+|  SCLK_OBUF_BUFG | SPI1/CS2_out        |                     |                1 |              1 |
+|  SCLK_OBUF_BUFG | SPI1/bit[3]_i_1_n_0 |                     |                2 |              4 |
+|  SCLK_OBUF_BUFG |                     |                     |                4 |              6 |
+|  clk_IBUF_BUFG  |                     | SPI1/clear          |                8 |             32 |
+|  SCLK_OBUF_BUFG | SPI1/sel            | SPI1/t_rst          |                8 |             32 |
+|  SCLK_OBUF_BUFG |                     | rd_count[0]_i_1_n_0 |                9 |             33 |
++-----------------+---------------------+---------------------+------------------+----------------+
+
+

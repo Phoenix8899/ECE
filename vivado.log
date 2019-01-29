@@ -1,0 +1,361 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jan 24 10:36:01 2019
+# Process ID: 7972
+# Current directory: /home/phoenix8899/ECE
+# Command line: vivado
+# Log file: /home/phoenix8899/ECE/vivado.log
+# Journal file: /home/phoenix8899/ECE/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/phoenix8899/ECE/Xilinx/Vivado/2018.3/data/ip'.
+file mkdir /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sources_1/new
+close [ open /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sources_1/new/simpleSPI.v w ]
+add_files /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sources_1/new/simpleSPI.v
+close [ open /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sources_1/new/ALS.v w ]
+add_files /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sources_1/new/ALS.v
+update_compile_order -fileset sources_1
+file mkdir /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sim_1/new/test.v w ]
+add_files -fileset sim_1 /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sim_1/new/test.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+set_property top test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sources_1/new/ALS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALS
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sources_1/new/simpleSPI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleSPI
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /home/phoenix8899/ECE/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto c1a0d7e7435b4bc89a1333b4245ca0de --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'led' [/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sim_1/new/test.v:39]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'd' [/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sources_1/new/ALS.v:23]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+ERROR: [XSIM 43-3388] /usr/bin/gcc not found, please install GCC for your Linux distribution.
+ERROR: [XSIM 43-3915] Encountered a fatal error. Cannot continue. Exiting... 
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sources_1/new/ALS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALS
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sources_1/new/simpleSPI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleSPI
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /home/phoenix8899/ECE/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto c1a0d7e7435b4bc89a1333b4245ca0de --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+ERROR: [XSIM 43-3388] /usr/bin/gcc not found, please install GCC for your Linux distribution.
+ERROR: [XSIM 43-3915] Encountered a fatal error. Cannot continue. Exiting... 
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test_vlog.prj
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /home/phoenix8899/ECE/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto c1a0d7e7435b4bc89a1333b4245ca0de --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simpleSPI
+Compiling module xil_defaultlib.ALS(refresh_period=25)
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim/xsim.dir/test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim/xsim.dir/test_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Jan 24 11:47:45 2019. For additional details about this file, please refer to the WebTalk help file at /home/phoenix8899/ECE/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Jan 24 11:47:45 2019...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 6830.207 ; gain = 87.961 ; free physical = 10990 ; free virtual = 15570
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/test/d1/SPI1}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test_vlog.prj
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /home/phoenix8899/ECE/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto c1a0d7e7435b4bc89a1333b4245ca0de --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 6832.543 ; gain = 0.000 ; free physical = 11016 ; free virtual = 15597
+run all
+run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 6832.543 ; gain = 0.000 ; free physical = 10768 ; free virtual = 15583
+run 1 ms
+run 1 ms
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test_vlog.prj
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /home/phoenix8899/ECE/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto c1a0d7e7435b4bc89a1333b4245ca0de --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run 1 ms
+run all
+run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 6832.543 ; gain = 0.000 ; free physical = 10496 ; free virtual = 15429
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sources_1/new/ALS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALS
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sources_1/new/simpleSPI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleSPI
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /home/phoenix8899/ECE/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto c1a0d7e7435b4bc89a1333b4245ca0de --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.simpleSPI
+Compiling module xil_defaultlib.ALS(refresh_period=25)
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/test/d1/SPI1}} 
+run 1 ms
+add_files -fileset constrs_1 -norecurse /home/phoenix8899/ECE/Spring2019/ECE3700/Basys3_Master.xdc
+import_files -fileset constrs_1 /home/phoenix8899/ECE/Spring2019/ECE3700/Basys3_Master.xdc
+export_ip_user_files -of_objects  [get_files /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/constrs_1/imports/ECE3700/Basys3_Master.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/constrs_1/imports/ECE3700/Basys3_Master.xdc
+file delete -force /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/constrs_1/imports/ECE3700/Basys3_Master.xdc
+add_files -fileset constrs_1 -norecurse /home/phoenix8899/ECE/Spring2019/ECE3700/Basys3_Master.xdc
+import_files -fileset constrs_1 /home/phoenix8899/ECE/Spring2019/ECE3700/Basys3_Master.xdc
+export_ip_user_files -of_objects  [get_files /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/constrs_1/imports/ECE3700/Basys3_Master.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/constrs_1/imports/ECE3700/Basys3_Master.xdc
+file delete -force /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/constrs_1/imports/ECE3700/Basys3_Master.xdc
+add_files -fileset constrs_1 -norecurse /home/phoenix8899/ECE/Spring2019/ECE3700/Basys3_Master.xdc
+import_files -fileset constrs_1 /home/phoenix8899/ECE/Spring2019/ECE3700/Basys3_Master.xdc
+export_ip_user_files -of_objects  [get_files /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/constrs_1/imports/ECE3700/Basys3_Master.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/constrs_1/imports/ECE3700/Basys3_Master.xdc
+file delete -force /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/constrs_1/imports/ECE3700/Basys3_Master.xdc
+add_files -fileset constrs_1 -norecurse /home/phoenix8899/ECE/Spring2019/ECE3700/Basys3_Master.xdc
+import_files -fileset constrs_1 /home/phoenix8899/ECE/Spring2019/ECE3700/Basys3_Master.xdc
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Thu Jan 24 12:07:50 2019] Launched synth_1...
+Run output will be captured here: /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.runs/synth_1/runme.log
+[Thu Jan 24 12:07:50 2019] Launched impl_1...
+Run output will be captured here: /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Thu Jan 24 12:11:28 2019] Launched impl_1...
+Run output will be captured here: /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Thu Jan 24 12:21:10 2019] Launched synth_1...
+Run output will be captured here: /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.runs/synth_1/runme.log
+[Thu Jan 24 12:21:10 2019] Launched impl_1...
+Run output will be captured here: /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Thu Jan 24 12:22:34 2019] Launched synth_1...
+Run output will be captured here: /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.runs/synth_1/runme.log
+[Thu Jan 24 12:22:34 2019] Launched impl_1...
+Run output will be captured here: /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  6 2018-23:53:53
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  6 2018-23:53:53
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 24 12:35:37 2019...
