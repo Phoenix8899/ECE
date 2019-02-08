@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ecestudent/ECE/Spring2019/ECE3700/ClockDivider/ClockDivider.srcs/sources_1/new/ClockDivider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockDivider
+WARNING: [VRFC 10-756] identifier count is used before its declaration [/home/ecestudent/ECE/Spring2019/ECE3700/ClockDivider/ClockDivider.srcs/sources_1/new/ClockDivider.v:30]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ecestudent/ECE/Spring2019/ECE3700/ClockDivider/ClockDivider.srcs/sim_1/new/clkTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkTest
