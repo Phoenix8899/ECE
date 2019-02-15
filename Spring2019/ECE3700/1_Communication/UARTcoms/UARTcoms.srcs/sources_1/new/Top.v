@@ -39,6 +39,7 @@ module Top(
     wire rxDone;
     
     reg [7:0] prev;
+    reg derp;
     
     UARTtransmitter UART1(
         .clk(clk),
@@ -62,6 +63,7 @@ module Top(
     initial begin 
         rst_1 = 0;
         prev  = 0; 
+        derp = 1;
     end
     
     always @(posedge clk, posedge rst) begin
@@ -71,13 +73,6 @@ module Top(
             rst_1 <= 1; 
     end
     
-//    always @(posedge rxDone) begin
-//        message[4] <= rxData;
-//        message[3] <= message[4];
-//        message[2] <= message[3];
-//        message[1] <= message[2];
-//        message[0] <= message[1];
-//    end 
     
     always @(posedge clk, negedge rst_1) begin
        if (~rst_1) begin
@@ -91,7 +86,9 @@ module Top(
                 data <= "h"; 
         end
         else begin
-            if(rxDone && prev != rxData) begin
+
+
+            if(rxDone && ~derp) begin
                 msg_count <= 0;
                 message[4] <= rxData;
                 message[3] <= message[4];
@@ -101,8 +98,14 @@ module Top(
                 start <= 0;
                 data <= rxData;
                 prev <= rxData;
+                
+                derp <= 1;
             end
-        
+            if (derp && ~rxDone) begin
+                derp <= 0;
+            end
+            
+
             if (send && (!start) && (!done)) begin
                 start <= 1;
                 data <= message[msg_count];
