@@ -18,7 +18,6 @@ proc create_report { reportName command } {
   }
 }
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -32,6 +31,7 @@ set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
 set_property ip_output_repo /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/UARTcoms/UARTcoms.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
+  /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/UARTcoms/UARTcoms.srcs/sources_1/imports/new/ClockDivider.v
   /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/UARTcoms/UARTcoms.srcs/sources_1/new/UARTreceiver.v
   /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/UARTcoms/UARTcoms.srcs/sources_1/new/UARTtransmitter.sv
   /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/UARTcoms/UARTcoms.srcs/sources_1/new/Top.v

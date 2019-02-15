@@ -28,9 +28,15 @@ module UARTtransmitter(
     
     reg [1:0] state;
     reg [2:0] bit;
+    wire dclk;
     
-    always @(posedge clk) begin  //need different clock
-        if (rst_1)
+    ClockDivider clk1 (
+    .clkIn(clk),
+    .clkOut(dclk)
+    );
+    
+    always @(posedge dclk) begin  
+        if (~rst_1)
             state <= 2'b00;
         case (state) 
             2'b00 : begin //wait
@@ -40,7 +46,7 @@ module UARTtransmitter(
                 end
                 else begin
                     bit <= 0;
-                    tx <= 1;
+                    tx <= 0;
                     state <= 2'b01;
                 end
             end

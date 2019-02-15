@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Feb  6 19:01:08 2019
-# Process ID: 19405
+# Start of session at: Fri Feb 15 12:57:05 2019
+# Process ID: 6035
 # Current directory: /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/UARTcoms/UARTcoms.runs/synth_1
 # Command line: vivado -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
 # Log file: /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/UARTcoms/UARTcoms.runs/synth_1/Top.vds
@@ -15,18 +15,22 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 19418 
+INFO: Helper process launched with PID 6047 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1390.066 ; gain = 0.000 ; free physical = 8457 ; free virtual = 14306
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1389.066 ; gain = 0.000 ; free physical = 9731 ; free virtual = 14663
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Top' [/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/UARTcoms/UARTcoms.srcs/sources_1/new/Top.v:23]
 INFO: [Synth 8-6157] synthesizing module 'UARTtransmitter' [/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/UARTcoms/UARTcoms.srcs/sources_1/new/UARTtransmitter.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'UARTtransmitter' (1#1) [/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/UARTcoms/UARTcoms.srcs/sources_1/new/UARTtransmitter.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ClockDivider' [/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/UARTcoms/UARTcoms.srcs/sources_1/imports/new/ClockDivider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDivider' (1#1) [/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/UARTcoms/UARTcoms.srcs/sources_1/imports/new/ClockDivider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'UARTtransmitter' (2#1) [/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/UARTcoms/UARTcoms.srcs/sources_1/new/UARTtransmitter.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'UARTreceiver' [/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/UARTcoms/UARTcoms.srcs/sources_1/new/UARTreceiver.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'UARTreceiver' (2#1) [/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/UARTcoms/UARTcoms.srcs/sources_1/new/UARTreceiver.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Top' (3#1) [/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/UARTcoms/UARTcoms.srcs/sources_1/new/Top.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'UARTreceiver' (3#1) [/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/UARTcoms/UARTcoms.srcs/sources_1/new/UARTreceiver.v:23]
+WARNING: [Synth 8-5788] Register prev_reg in module Top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/UARTcoms/UARTcoms.srcs/sources_1/new/Top.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (4#1) [/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/UARTcoms/UARTcoms.srcs/sources_1/new/Top.v:23]
+WARNING: [Synth 8-3331] design UARTreceiver has unconnected port start
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1420.488 ; gain = 30.422 ; free physical = 8469 ; free virtual = 14318
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1420.488 ; gain = 31.422 ; free physical = 9743 ; free virtual = 14675
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -39,10 +43,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1420.488 ; gain = 30.422 ; free physical = 8469 ; free virtual = 14318
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1420.488 ; gain = 31.422 ; free physical = 9743 ; free virtual = 14675
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1420.488 ; gain = 30.422 ; free physical = 8469 ; free virtual = 14318
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1420.488 ; gain = 31.422 ; free physical = 9743 ; free virtual = 14675
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -53,57 +57,33 @@ Parsing XDC File [/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/UARTc
 Finished Parsing XDC File [/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/UARTcoms/UARTcoms.srcs/constrs_1/imports/ECE3700/Basys3_Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/UARTcoms/UARTcoms.srcs/constrs_1/imports/ECE3700/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1767.918 ; gain = 0.000 ; free physical = 8220 ; free virtual = 14069
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1774.402 ; gain = 0.000 ; free physical = 9494 ; free virtual = 14425
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1767.918 ; gain = 0.000 ; free physical = 8221 ; free virtual = 14070
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1774.402 ; gain = 0.000 ; free physical = 9494 ; free virtual = 14426
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1767.918 ; gain = 0.000 ; free physical = 8221 ; free virtual = 14070
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1767.918 ; gain = 0.000 ; free physical = 8221 ; free virtual = 14070
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1774.402 ; gain = 0.000 ; free physical = 9494 ; free virtual = 14426
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1774.402 ; gain = 0.000 ; free physical = 9494 ; free virtual = 14426
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1767.918 ; gain = 377.852 ; free physical = 8297 ; free virtual = 14146
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1774.402 ; gain = 385.336 ; free physical = 9574 ; free virtual = 14499
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1767.918 ; gain = 377.852 ; free physical = 8297 ; free virtual = 14146
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1774.402 ; gain = 385.336 ; free physical = 9574 ; free virtual = 14499
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1767.918 ; gain = 377.852 ; free physical = 8299 ; free virtual = 14148
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1774.402 ; gain = 385.336 ; free physical = 9576 ; free virtual = 14501
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'UARTtransmitter'
-INFO: [Synth 8-5544] ROM "tx0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'UARTreceiver'
-INFO: [Synth 8-5544] ROM "data0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                 iSTATE1 |                               00 |                               00
-                  iSTATE |                               01 |                               01
-                 iSTATE0 |                               10 |                               10
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'UARTtransmitter'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                 iSTATE1 |                               00 |                               00
-                  iSTATE |                               01 |                               01
-                 iSTATE0 |                               10 |                               10
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'UARTreceiver'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1767.918 ; gain = 377.852 ; free physical = 8289 ; free virtual = 14138
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1774.402 ; gain = 385.336 ; free physical = 9568 ; free virtual = 14493
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -119,17 +99,19 @@ Detailed RTL Component Info :
 	   2 Input      3 Bit       Adders := 3     
 +---Registers : 
 	               32 Bit    Registers := 1     
-	                8 Bit    Registers := 7     
+	                8 Bit    Registers := 8     
 	                3 Bit    Registers := 2     
-	                1 Bit    Registers := 5     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
 +---Muxes : 
-	   3 Input      8 Bit        Muxes := 2     
-	   3 Input      3 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 2     
-	   3 Input      2 Bit        Muxes := 2     
-	   2 Input      2 Bit        Muxes := 4     
-	   2 Input      1 Bit        Muxes := 11    
-	   3 Input      1 Bit        Muxes := 8     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 14    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -143,24 +125,30 @@ Detailed RTL Component Info :
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
 	               32 Bit    Registers := 1     
-	                8 Bit    Registers := 6     
+	                8 Bit    Registers := 7     
 	                1 Bit    Registers := 2     
 +---Muxes : 
-	   2 Input      3 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 9     
+Module ClockDivider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
 Module UARTtransmitter 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
 	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 2     
 +---Muxes : 
-	   3 Input      3 Bit        Muxes := 1     
-	   3 Input      2 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 4     
-	   3 Input      1 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 3     
 Module UARTreceiver 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -168,15 +156,16 @@ Detailed RTL Component Info :
 +---Registers : 
 	                8 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   3 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 1     
-	   3 Input      3 Bit        Muxes := 1     
-	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 4     
-	   3 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -193,37 +182,37 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[30]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[31]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[29]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[28]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[27]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[26]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[25]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[24]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[23]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[22]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[21]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[20]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[19]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[18]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[17]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[16]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[15]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[14]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[13]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[12]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[11]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[10]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[9]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[8]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[7]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[6]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[5]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3886] merging instance 'msg_count_reg[4]' (FDCE) to 'msg_count_reg[3]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\msg_count_reg[3] )
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[3]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[4]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[5]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[6]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[7]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[8]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[9]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[10]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[11]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[12]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[13]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[14]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[15]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[16]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[17]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[18]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[19]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[20]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[21]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[22]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[23]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[24]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[25]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[26]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[27]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[28]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[29]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'msg_count_reg[30]' (FDCE) to 'msg_count_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\msg_count_reg[31] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1767.918 ; gain = 377.852 ; free physical = 8278 ; free virtual = 14129
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1774.402 ; gain = 385.336 ; free physical = 9556 ; free virtual = 14482
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -235,13 +224,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1767.918 ; gain = 377.852 ; free physical = 8154 ; free virtual = 14005
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1774.402 ; gain = 385.336 ; free physical = 9429 ; free virtual = 14357
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1767.918 ; gain = 377.852 ; free physical = 8152 ; free virtual = 14003
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1774.402 ; gain = 385.336 ; free physical = 9426 ; free virtual = 14354
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -253,7 +242,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1767.918 ; gain = 377.852 ; free physical = 8152 ; free virtual = 14003
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1774.402 ; gain = 385.336 ; free physical = 9425 ; free virtual = 14353
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -277,7 +266,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1767.918 ; gain = 377.852 ; free physical = 8152 ; free virtual = 14003
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1774.402 ; gain = 385.336 ; free physical = 9426 ; free virtual = 14354
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -290,7 +279,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1767.918 ; gain = 377.852 ; free physical = 8152 ; free virtual = 14003
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1774.402 ; gain = 385.336 ; free physical = 9426 ; free virtual = 14354
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -302,25 +291,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1767.918 ; gain = 377.852 ; free physical = 8152 ; free virtual = 14003
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1774.402 ; gain = 385.336 ; free physical = 9426 ; free virtual = 14354
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1767.918 ; gain = 377.852 ; free physical = 8152 ; free virtual = 14003
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1774.402 ; gain = 385.336 ; free physical = 9426 ; free virtual = 14354
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1767.918 ; gain = 377.852 ; free physical = 8152 ; free virtual = 14003
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1774.402 ; gain = 385.336 ; free physical = 9426 ; free virtual = 14354
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1767.918 ; gain = 377.852 ; free physical = 8152 ; free virtual = 14003
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1774.402 ; gain = 385.336 ; free physical = 9426 ; free virtual = 14354
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -333,52 +322,56 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-----+------+
-|      |Cell |Count |
-+------+-----+------+
-|1     |BUFG |     1|
-|2     |LUT1 |     1|
-|3     |LUT2 |     2|
-|4     |LUT3 |    12|
-|5     |LUT4 |    10|
-|6     |LUT5 |     6|
-|7     |LUT6 |    26|
-|8     |FDCE |    29|
-|9     |FDPE |    24|
-|10    |FDRE |    18|
-|11    |FDSE |     2|
-|12    |IBUF |     4|
-|13    |OBUF |     1|
-+------+-----+------+
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    16|
+|3     |LUT1   |     3|
+|4     |LUT2   |    10|
+|5     |LUT3   |     4|
+|6     |LUT4   |     8|
+|7     |LUT5   |    15|
+|8     |LUT6   |    40|
+|9     |FDCE   |    29|
+|10    |FDPE   |    24|
+|11    |FDRE   |    95|
+|12    |IBUF   |     4|
+|13    |OBUF   |     1|
++------+-------+------+
 
 Report Instance Areas: 
 +------+---------+----------------+------+
 |      |Instance |Module          |Cells |
 +------+---------+----------------+------+
-|1     |top      |                |   136|
-|2     |  UART1  |UARTtransmitter |    24|
-|3     |  UART2  |UARTreceiver    |    36|
+|1     |top      |                |   250|
+|2     |  UART1  |UARTtransmitter |    80|
+|3     |    clk1 |ClockDivider_0  |    51|
+|4     |  UART2  |UARTreceiver    |    93|
+|5     |    clk1 |ClockDivider    |    51|
 +------+---------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1767.918 ; gain = 377.852 ; free physical = 8152 ; free virtual = 14003
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1774.402 ; gain = 385.336 ; free physical = 9426 ; free virtual = 14354
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1767.918 ; gain = 30.422 ; free physical = 8206 ; free virtual = 14057
-Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1767.918 ; gain = 377.852 ; free physical = 8206 ; free virtual = 14057
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1774.402 ; gain = 31.422 ; free physical = 9480 ; free virtual = 14408
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1774.402 ; gain = 385.336 ; free physical = 9480 ; free virtual = 14408
 INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1767.918 ; gain = 0.000 ; free physical = 8148 ; free virtual = 13999
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1774.402 ; gain = 0.000 ; free physical = 9422 ; free virtual = 14350
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-55 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+49 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1767.918 ; gain = 377.930 ; free physical = 8205 ; free virtual = 14056
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1767.918 ; gain = 0.000 ; free physical = 8205 ; free virtual = 14056
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1774.402 ; gain = 385.414 ; free physical = 9479 ; free virtual = 14407
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1774.402 ; gain = 0.000 ; free physical = 9479 ; free virtual = 14407
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/UARTcoms/UARTcoms.runs/synth_1/Top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Feb  6 19:01:28 2019...
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 15 12:57:27 2019...

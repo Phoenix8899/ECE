@@ -38,6 +38,8 @@ module Top(
     wire [7:0] rxData;
     wire rxDone;
     
+    reg [7:0] prev;
+    
     UARTtransmitter UART1(
         .clk(clk),
         .data(data),
@@ -50,7 +52,7 @@ module Top(
     UARTreceiver UART2(
         .clk(clk),
         .rx(rx),
-        .start(start),
+        .start(start),//i dont even use its just here. probably not good code. shouldnt break anything.
         .rst_1(rst_1),
         .done(rxDone), 
         .data(rxData) 
@@ -58,7 +60,8 @@ module Top(
      
     
     initial begin 
-        rst_1 = 0; 
+        rst_1 = 0;
+        prev  = 0; 
     end
     
     always @(posedge clk, posedge rst) begin
@@ -68,26 +71,42 @@ module Top(
             rst_1 <= 1; 
     end
     
+//    always @(posedge rxDone) begin
+//        message[4] <= rxData;
+//        message[3] <= message[4];
+//        message[2] <= message[3];
+//        message[1] <= message[2];
+//        message[0] <= message[1];
+//    end 
+    
     always @(posedge clk, negedge rst_1) begin
        if (~rst_1) begin
-        msg_count <= 0;
-        message [0] <= "h";
-        message [1] <= "e";
-        message [2] <= "l";
-        message [3] <= "l";
-        message [4] <= "o";
-        start <= 0;
-        data <= "h";
+                msg_count <= 0;
+                message [0] <= "h";
+                message [1] <= "e";
+                message [2] <= "l";
+                message [3] <= "l";
+                message [4] <= "o";
+                start <= 0;
+                data <= "h"; 
         end
         else begin
+            if(rxDone && prev != rxData) begin
+                msg_count <= 0;
+                message[4] <= rxData;
+                message[3] <= message[4];
+                message[2] <= message[3];
+                message[1] <= message[2];
+                message[0] <= message[1];
+                start <= 0;
+                data <= rxData;
+                prev <= rxData;
+            end
+        
             if (send && (!start) && (!done)) begin
                 start <= 1;
                 data <= message[msg_count];
-                message[0] <= rxData;
-                message[1] <= message[0];
-                message[2] <= message[1];
-                message[3] <= message[2];
-                message[4] <= message[3];
+
                 
             end
             else if (start && done) begin

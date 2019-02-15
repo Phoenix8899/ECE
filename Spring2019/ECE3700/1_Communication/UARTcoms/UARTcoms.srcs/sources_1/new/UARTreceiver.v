@@ -24,46 +24,47 @@ module UARTreceiver(
     input start, clk, rst_1,
     input rx,
     output reg done, 
-    output reg [7:0]data
+    output reg [7:0] data
     );
     
     reg [1:0] state;
     reg [2:0] bit;
+    wire dclk;
     
-    always @(posedge clk) begin  //need different clock
-        if (rst_1)
+    ClockDivider clk1 (
+    .clkIn(clk),
+    .clkOut(dclk)
+    );
+    
+    always @(posedge dclk) begin  
+        if (~rst_1)
             state <= 2'b00;
         case (state) 
             2'b00 : begin //wait
-                if (~start) begin
-                    data <= 1;
+                if (rx) begin
+                    data <= 0;
                     done <= 0;     
                 end
                 else begin
                     bit <= 0;
-                    data <= 1;
+                    done <= 0;
+                    //data <= 1;
                     state <= 2'b01;
                 end
             end
-            2'b01 : begin //recieve
+            2'b01 : begin //read
                     if (bit < 3'b111) begin
-                    data[bit] <= rx;
-                    bit = bit + 1;
+                        data[bit] <= rx;
+                        bit = bit + 1;
                     end 
                     else begin
-                    data[bit] <= rx;
-                    state <= 2'b10;
+                        data[bit] <= rx;
+                        state <= 2'b10;
                     end
             end
             2'b10 : begin //done
-                if (start) begin
                     done <= 1;
-                    data <= 1;
-                end
-                else begin
-                    done <= 0;
                     state <= 2'b00;
-                end
             end
             default begin //wtf
                 state <= 2'b00;

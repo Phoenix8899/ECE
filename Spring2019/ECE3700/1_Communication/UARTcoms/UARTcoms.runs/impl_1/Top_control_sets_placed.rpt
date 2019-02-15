@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Wed Feb  6 19:01:51 2019
+| Date         : Fri Feb 15 12:57:52 2019
 | Host         : phoenix8899 running 64-bit Ubuntu 18.04.1 LTS
 | Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
 | Design       : Top
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     6 |
-| Unused register locations in slices containing registers |    23 |
+| Number of unique control sets                            |    11 |
+| Unused register locations in slices containing registers |    28 |
 +----------------------------------------------------------+-------+
 
 
@@ -35,10 +35,12 @@ Table of Contents
 | Fanout | Control Sets |
 +--------+--------------+
 |      1 |            2 |
+|      2 |            1 |
 |      4 |            1 |
-|      8 |            1 |
-|     11 |            1 |
-|    16+ |            1 |
+|      6 |            1 |
+|      8 |            2 |
+|     14 |            1 |
+|    16+ |            3 |
 +--------+--------------+
 
 
@@ -48,27 +50,32 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              11 |            4 |
-| No           | No                    | Yes                    |               5 |            2 |
-| No           | Yes                   | No                     |               8 |            4 |
-| Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              48 |           10 |
-| Yes          | Yes                   | No                     |               1 |            1 |
+| No           | No                    | No                     |              22 |            9 |
+| No           | No                    | Yes                    |               5 |            3 |
+| No           | Yes                   | No                     |              64 |           16 |
+| Yes          | No                    | No                     |               9 |            3 |
+| Yes          | No                    | Yes                    |              48 |           12 |
+| Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+------------------+-----------------------+------------------+----------------+
-|  Clock Signal  |   Enable Signal  |    Set/Reset Signal   | Slice Load Count | Bel Load Count |
-+----------------+------------------+-----------------------+------------------+----------------+
-|  clk_IBUF_BUFG |                  | rst_IBUF              |                1 |              1 |
-|  clk_IBUF_BUFG | UART1/tx_i_2_n_0 | UART1/tx0             |                1 |              1 |
-|  clk_IBUF_BUFG |                  | message[0][7]_i_2_n_0 |                1 |              4 |
-|  clk_IBUF_BUFG |                  | UART2/data0           |                4 |              8 |
-|  clk_IBUF_BUFG |                  |                       |                4 |             11 |
-|  clk_IBUF_BUFG | UART1/E[0]       | message[0][7]_i_2_n_0 |               10 |             48 |
-+----------------+------------------+-----------------------+------------------+----------------+
++--------------------------+--------------------+--------------------------------+------------------+----------------+
+|       Clock Signal       |    Enable Signal   |        Set/Reset Signal        | Slice Load Count | Bel Load Count |
++--------------------------+--------------------+--------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG           |                    | rst_IBUF                       |                1 |              1 |
+|  UART1/clk1/clkOut       | UART1/tx_i_1_n_0   |                                |                1 |              1 |
+|  clk_IBUF_BUFG           |                    |                                |                2 |              2 |
+|  clk_IBUF_BUFG           |                    | message[4][7]_i_2_n_0          |                2 |              4 |
+|  UART1/clk1/clkOut       |                    |                                |                2 |              6 |
+|  clk_IBUF_BUFG           | UART2/E[0]         | message[4][7]_i_2_n_0          |                3 |              8 |
+|  clk_IBUF_BUFG           | UART2/rst_1_reg[0] |                                |                2 |              8 |
+|  UART2/clk1/clkOut_reg_0 |                    |                                |                5 |             14 |
+|  clk_IBUF_BUFG           |                    | UART2/clk1/count[0]_i_1__0_n_0 |                8 |             32 |
+|  clk_IBUF_BUFG           |                    | UART1/clk1/clear               |                8 |             32 |
+|  clk_IBUF_BUFG           | UART2/msg_count0   | message[4][7]_i_2_n_0          |                9 |             40 |
++--------------------------+--------------------+--------------------------------+------------------+----------------+
 
 
