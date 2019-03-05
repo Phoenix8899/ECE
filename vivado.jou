@@ -2,96 +2,29 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Thu Jan 24 10:36:01 2019
-# Process ID: 7972
+# Start of session at: Thu Feb 28 10:19:35 2019
+# Process ID: 25349
 # Current directory: /home/phoenix8899/ECE
 # Command line: vivado
 # Log file: /home/phoenix8899/ECE/vivado.log
 # Journal file: /home/phoenix8899/ECE/vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.xpr
-file mkdir /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sources_1/new
-close [ open /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sources_1/new/simpleSPI.v w ]
-add_files /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sources_1/new/simpleSPI.v
-close [ open /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sources_1/new/ALS.v w ]
-add_files /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sources_1/new/ALS.v
+create_project TrigWavegem /home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem -part xc7a35tcpg236-1
+set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
+file mkdir /home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/sources_1/new
+close [ open /home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/sources_1/new/wavegen_cordic.v w ]
+add_files /home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/sources_1/new/wavegen_cordic.v
+close [ open /home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/sources_1/new/wavegen_cordic_simple.v w ]
+add_files /home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/sources_1/new/wavegen_cordic_simple.v
+close [ open /home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/sources_1/new/wavegen_lut.v w ]
+add_files /home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/sources_1/new/wavegen_lut.v
+import_files -fileset constrs_1 -force -norecurse /home/phoenix8899/ECE/Spring2019/ECE3700/Basys3_Master.xdc
 update_compile_order -fileset sources_1
-file mkdir /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sim_1/new
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sim_1/new/test.v w ]
-add_files -fileset sim_1 /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sim_1/new/test.v
-update_compile_order -fileset sim_1
+open_project /home/phoenix8899/ECE/Spring2019/ECE3700/ClockDivider/ClockDivider.xpr
 update_compile_order -fileset sources_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top test [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-launch_simulation
-launch_simulation
-launch_simulation
-source test.tcl
-current_wave_config {Untitled 1}
-add_wave {{/test/d1/SPI1}} 
-relaunch_sim
-run all
-run 1 ms
-run 1 ms
-relaunch_sim
-run 1 ms
-run all
-close_sim
-launch_simulation
-source test.tcl
-current_wave_config {Untitled 2}
-add_wave {{/test/d1/SPI1}} 
-run 1 ms
-add_files -fileset constrs_1 -norecurse /home/phoenix8899/ECE/Spring2019/ECE3700/Basys3_Master.xdc
-import_files -fileset constrs_1 /home/phoenix8899/ECE/Spring2019/ECE3700/Basys3_Master.xdc
-export_ip_user_files -of_objects  [get_files /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/constrs_1/imports/ECE3700/Basys3_Master.xdc] -no_script -reset -force -quiet
-remove_files  -fileset constrs_1 /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/constrs_1/imports/ECE3700/Basys3_Master.xdc
-file delete -force /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/constrs_1/imports/ECE3700/Basys3_Master.xdc
-add_files -fileset constrs_1 -norecurse /home/phoenix8899/ECE/Spring2019/ECE3700/Basys3_Master.xdc
-import_files -fileset constrs_1 /home/phoenix8899/ECE/Spring2019/ECE3700/Basys3_Master.xdc
-export_ip_user_files -of_objects  [get_files /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/constrs_1/imports/ECE3700/Basys3_Master.xdc] -no_script -reset -force -quiet
-remove_files  -fileset constrs_1 /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/constrs_1/imports/ECE3700/Basys3_Master.xdc
-file delete -force /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/constrs_1/imports/ECE3700/Basys3_Master.xdc
-add_files -fileset constrs_1 -norecurse /home/phoenix8899/ECE/Spring2019/ECE3700/Basys3_Master.xdc
-import_files -fileset constrs_1 /home/phoenix8899/ECE/Spring2019/ECE3700/Basys3_Master.xdc
-export_ip_user_files -of_objects  [get_files /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/constrs_1/imports/ECE3700/Basys3_Master.xdc] -no_script -reset -force -quiet
-remove_files  -fileset constrs_1 /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/constrs_1/imports/ECE3700/Basys3_Master.xdc
-file delete -force /home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/constrs_1/imports/ECE3700/Basys3_Master.xdc
-add_files -fileset constrs_1 -norecurse /home/phoenix8899/ECE/Spring2019/ECE3700/Basys3_Master.xdc
-import_files -fileset constrs_1 /home/phoenix8899/ECE/Spring2019/ECE3700/Basys3_Master.xdc
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-open_hw
-connect_hw_server
-disconnect_hw_server localhost:3121
-connect_hw_server
-disconnect_hw_server localhost:3121
-connect_hw_server
-disconnect_hw_server localhost:3121
-connect_hw_server
-close_hw
-open_hw
-connect_hw_server
-disconnect_hw_server localhost:3121
-connect_hw_server
-disconnect_hw_server localhost:3121
-connect_hw_server
-disconnect_hw_server localhost:3121
-connect_hw_server
-close_sim
+close_project
+open_project /home/phoenix8899/ECE/Spring2019/ECE3700/UARTcoms/UARTcoms.xpr
+update_compile_order -fileset sources_1
+close_project
+update_compile_order -fileset sources_1

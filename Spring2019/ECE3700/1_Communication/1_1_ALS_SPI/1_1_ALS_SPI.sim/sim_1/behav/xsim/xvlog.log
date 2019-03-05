@@ -1,6 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sources_1/new/ALS.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALS
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sources_1/new/simpleSPI.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module simpleSPI
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/phoenix8899/ECE/Spring2019/ECE3700/1_Communication/1_1_ALS_SPI/1_1_ALS_SPI.srcs/sim_1/new/test.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module test
