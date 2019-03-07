@@ -1,0 +1,23 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/lib/x86_64-linux-gnu/libc.so.6(+0x3ef20) [0x7f32d556bf20]
+/home/phoenix8899/Xilinx/Vivado/2018.3/lib/lnx64.o/libverific.so(+0x5e44e0) [0x7f32d6c5d4e0]
+/home/phoenix8899/Xilinx/Vivado/2018.3/lib/lnx64.o/libverific.so(Verific::hdl_file_sort::QuickParseVerilog(char const*)+0x952) [0x7f32d6c70fc2]
+/home/phoenix8899/Xilinx/Vivado/2018.3/lib/lnx64.o/libverific.so(Verific::hdl_file_sort::QuickAnalyze(char const*, char const*)+0x79) [0x7f32d6c7adc9]
+/home/phoenix8899/Xilinx/Vivado/2018.3/lib/lnx64.o/libverific.so(Verific::hdl_file_sort::CreateNode(char const*, char const*)+0x37) [0x7f32d6c7b657]
+/home/phoenix8899/Xilinx/Vivado/2018.3/lib/lnx64.o/libverific.so(Verific::hdl_file_sort::RegisterFileInternal(char const*, char const*, unsigned int, unsigned int, unsigned int)+0x5a) [0x7f32d6c7cbca]
+srcscanner() [0x493b10]
+srcscanner() [0x49bf5f]
+srcscanner() [0x49c0de]
+srcscanner() [0x44f67a]
+srcscanner() [0x474598]
+/home/phoenix8899/Xilinx/Vivado/2018.3/lib/lnx64.o/libtcl8.5.so(TclInvokeStringCommand+0x76) [0x7f32d7791f66]
+/home/phoenix8899/Xilinx/Vivado/2018.3/lib/lnx64.o/libtcl8.5.so(+0x334af) [0x7f32d77964af]
+/home/phoenix8899/Xilinx/Vivado/2018.3/lib/lnx64.o/libtcl8.5.so(+0x34b38) [0x7f32d7797b38]
+/home/phoenix8899/Xilinx/Vivado/2018.3/lib/lnx64.o/libtcl8.5.so(Tcl_EvalEx+0x13) [0x7f32d77980a3]
+/home/phoenix8899/Xilinx/Vivado/2018.3/lib/lnx64.o/libtcl8.5.so(Tcl_Eval+0x15) [0x7f32d77980c5]
+srcscanner(main+0x293) [0x43a993]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7) [0x7f32d554eb97]
+srcscanner() [0x43d989]

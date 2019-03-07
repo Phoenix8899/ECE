@@ -1,0 +1,339 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Mar  6 17:59:19 2019
+# Process ID: 7493
+# Current directory: /home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.runs/synth_1
+# Command line: vivado -log TrigTop.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TrigTop.tcl
+# Log file: /home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.runs/synth_1/TrigTop.vds
+# Journal file: /home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source TrigTop.tcl -notrace
+Command: synth_design -top TrigTop -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7511 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1374.449 ; gain = 26.914 ; free physical = 10163 ; free virtual = 14327
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TrigTop' [/home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/sources_1/new/TrigTop.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [/home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/sources_1/imports/1_1_ALS_SPI/debouncer.v:1]
+	Parameter confirm_time bound to: 100 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/sources_1/imports/1_1_ALS_SPI/debouncer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (1#1) [/home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/sources_1/imports/1_1_ALS_SPI/debouncer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cordic_simple' [/home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/sources_1/new/wavegen_cordic_simple.v:3]
+WARNING: [Synth 8-6014] Unused sequential element theta_reg was removed.  [/home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/sources_1/new/wavegen_cordic_simple.v:59]
+WARNING: [Synth 8-6014] Unused sequential element direction_reg was removed.  [/home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/sources_1/new/wavegen_cordic_simple.v:60]
+WARNING: [Synth 8-6014] Unused sequential element cos_sign_reg was removed.  [/home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/sources_1/new/wavegen_cordic_simple.v:61]
+WARNING: [Synth 8-6014] Unused sequential element sin_sign_reg was removed.  [/home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/sources_1/new/wavegen_cordic_simple.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'cordic_simple' (2#1) [/home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/sources_1/new/wavegen_cordic_simple.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'TrigTop' (3#1) [/home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/sources_1/new/TrigTop.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1420.199 ; gain = 72.664 ; free physical = 10172 ; free virtual = 14337
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1420.199 ; gain = 72.664 ; free physical = 10171 ; free virtual = 14336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1420.199 ; gain = 72.664 ; free physical = 10171 ; free virtual = 14337
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/constrs_1/imports/ECE3700/Basys3_Master.xdc]
+Finished Parsing XDC File [/home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/constrs_1/imports/ECE3700/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/constrs_1/imports/ECE3700/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TrigTop_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TrigTop_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1768.613 ; gain = 0.000 ; free physical = 9939 ; free virtual = 14104
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1768.613 ; gain = 0.000 ; free physical = 9940 ; free virtual = 14104
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1768.613 ; gain = 0.000 ; free physical = 9940 ; free virtual = 14104
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1768.613 ; gain = 0.000 ; free physical = 9940 ; free virtual = 14104
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1768.613 ; gain = 421.078 ; free physical = 10018 ; free virtual = 14180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1768.613 ; gain = 421.078 ; free physical = 10018 ; free virtual = 14180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1768.613 ; gain = 421.078 ; free physical = 10020 ; free virtual = 14181
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'debouncer'
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'debouncer'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1768.613 ; gain = 421.078 ; free physical = 10011 ; free virtual = 14172
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     21 Bit       Adders := 2     
+	   2 Input     14 Bit       Adders := 1     
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module debouncer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 4     
+Module cordic_simple 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     21 Bit       Adders := 2     
+	   2 Input     14 Bit       Adders := 1     
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "nolabel_line31/state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nolabel_line31/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1768.613 ; gain = 421.078 ; free physical = 9999 ; free virtual = 14160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1768.613 ; gain = 421.078 ; free physical = 9874 ; free virtual = 14036
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1768.613 ; gain = 421.078 ; free physical = 9873 ; free virtual = 14035
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5966] Removing register instance (\T1/rst_l_reg ) from module (TrigTop) as it has self-loop and (\T1/rst_l_reg__1 ) is actual driver [/home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/sources_1/new/wavegen_cordic_simple.v:54]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1768.613 ; gain = 421.078 ; free physical = 9872 ; free virtual = 14034
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1768.613 ; gain = 421.078 ; free physical = 9872 ; free virtual = 14034
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1768.613 ; gain = 421.078 ; free physical = 9872 ; free virtual = 14034
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1768.613 ; gain = 421.078 ; free physical = 9872 ; free virtual = 14034
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1768.613 ; gain = 421.078 ; free physical = 9872 ; free virtual = 14034
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1768.613 ; gain = 421.078 ; free physical = 9872 ; free virtual = 14034
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1768.613 ; gain = 421.078 ; free physical = 9872 ; free virtual = 14034
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    24|
+|3     |LUT1   |    25|
+|4     |LUT2   |    44|
+|5     |LUT3   |     5|
+|6     |LUT4   |    14|
+|7     |LUT5   |     4|
+|8     |LUT6   |     7|
+|9     |FDCE   |    10|
+|10    |FDPE   |     7|
+|11    |FDRE   |    35|
+|12    |IBUF   |     3|
+|13    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------+--------------+------+
+|      |Instance         |Module        |Cells |
++------+-----------------+--------------+------+
+|1     |top              |              |   195|
+|2     |  T1             |cordic_simple |   116|
+|3     |  nolabel_line31 |debouncer     |    59|
++------+-----------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1768.613 ; gain = 421.078 ; free physical = 9872 ; free virtual = 14034
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1768.613 ; gain = 72.664 ; free physical = 9925 ; free virtual = 14087
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1768.613 ; gain = 421.078 ; free physical = 9925 ; free virtual = 14087
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1768.613 ; gain = 0.000 ; free physical = 9866 ; free virtual = 14029
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1768.613 ; gain = 421.164 ; free physical = 9922 ; free virtual = 14085
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1768.613 ; gain = 0.000 ; free physical = 9922 ; free virtual = 14085
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.runs/synth_1/TrigTop.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TrigTop_utilization_synth.rpt -pb TrigTop_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar  6 17:59:41 2019...

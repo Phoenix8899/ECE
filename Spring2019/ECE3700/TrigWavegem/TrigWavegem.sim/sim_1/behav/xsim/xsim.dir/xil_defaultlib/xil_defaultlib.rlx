@@ -1,0 +1,9 @@
+0.6
+2018.3
+Dec  6 2018
+23:39:36
+/home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+/home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/sim_1/new/TrigTest.v,1551915803,verilog,,,,TrigTest,,,,,,,,
+/home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/sources_1/new/wavegen_cordic.v,1551915229,verilog,,/home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/sim_1/new/TrigTest.v,,cordic,,,,,,,,
+/home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/sources_1/new/wavegen_cordic_simple.v,1551915791,verilog,,/home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/sim_1/new/TrigTest.v,,cordic_simple,,,,,,,,
+/home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/sources_1/new/wavegen_lut.v,1551919515,verilog,,/home/phoenix8899/ECE/Spring2019/ECE3700/TrigWavegem/TrigWavegem.srcs/sim_1/new/TrigTest.v,,lut,,,,,,,,
