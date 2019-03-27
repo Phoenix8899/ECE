@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Fri Mar 22 17:57:44 2019
-# Process ID: 18613
+# Start of session at: Fri Mar 22 16:12:21 2019
+# Process ID: 2899
 # Current directory: /home/phoenix8899/ECE
 # Command line: vivado
 # Log file: /home/phoenix8899/ECE/vivado.log
@@ -17,6 +17,36 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/phoenix8899/Xilinx/Vivado/2018.3/data/ip'.
 update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Fri Mar 22 16:14:12 2019] Launched synth_1...
+Run output will be captured here: /home/phoenix8899/ECE/Spring2019/ECE3700/PWM/PWM.runs/synth_1/runme.log
+[Fri Mar 22 16:14:12 2019] Launched impl_1...
+Run output will be captured here: /home/phoenix8899/ECE/Spring2019/ECE3700/PWM/PWM.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  6 2018-23:53:53
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A6F4A7A
+set_property PROGRAM.FILE {/home/phoenix8899/ECE/Spring2019/ECE3700/PWM/PWM.runs/impl_1/dim_leds.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/phoenix8899/ECE/Spring2019/ECE3700/PWM/PWM.runs/impl_1/dim_leds.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 launch_simulation
 INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/phoenix8899/ECE/Spring2019/ECE3700/PWM/PWM.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
@@ -46,7 +76,15 @@ Compiling module xil_defaultlib.PWM_signal
 Compiling module xil_defaultlib.PWM_sigTest
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot PWM_sigTest_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /home/phoenix8899/ECE/Spring2019/ECE3700/PWM/PWM.sim/sim_1/behav/xsim/xsim.dir/PWM_sigTest_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 22 16:16:04 2019...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/phoenix8899/ECE/Spring2019/ECE3700/PWM/PWM.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
@@ -67,7 +105,21 @@ source PWM_sigTest.tcl
 # run 1000ns
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'PWM_sigTest_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 7445.633 ; gain = 83.691 ; free physical = 11618 ; free virtual = 15299
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Fri Mar 22 16:17:16 2019] Launched synth_1...
+Run output will be captured here: /home/phoenix8899/ECE/Spring2019/ECE3700/PWM/PWM.runs/synth_1/runme.log
+[Fri Mar 22 16:17:16 2019] Launched impl_1...
+Run output will be captured here: /home/phoenix8899/ECE/Spring2019/ECE3700/PWM/PWM.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/phoenix8899/ECE/Spring2019/ECE3700/PWM/PWM.runs/impl_1/dim_leds.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Fri Mar 22 17:58:24 2019...
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 22 16:20:11 2019...

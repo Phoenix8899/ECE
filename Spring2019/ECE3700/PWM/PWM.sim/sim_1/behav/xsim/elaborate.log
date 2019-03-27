@@ -1,0 +1,13 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /home/phoenix8899/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto d8c6c9b69362491abf422805b66f3e12 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot PWM_sigTest_behav xil_defaultlib.PWM_sigTest xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PWM_signal
+Compiling module xil_defaultlib.PWM_sigTest
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot PWM_sigTest_behav

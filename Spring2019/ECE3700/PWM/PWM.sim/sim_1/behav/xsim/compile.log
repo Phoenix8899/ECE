@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/phoenix8899/ECE/Spring2019/ECE3700/PWM/PWM.srcs/sources_1/new/PWM_signal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PWM_signal
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/phoenix8899/ECE/Spring2019/ECE3700/PWM/PWM.srcs/sim_1/new/PWM_sigTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PWM_sigTest
