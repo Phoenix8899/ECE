@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ecestudent/ECE/Fall2018/ECE2700/JKFF_Test/JKFF_Test.srcs/sources_1/new/DFF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DFF
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ecestudent/ECE/Fall2018/ECE2700/JKFF_Test/JKFF_Test.srcs/sources_1/new/JKFF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module JKFF
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ecestudent/ECE/Fall2018/ECE2700/JKFF_Test/JKFF_Test.srcs/sources_1/new/dlatch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dlatch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ecestudent/ECE/Fall2018/ECE2700/JKFF_Test/JKFF_Test.srcs/sim_1/new/JKFF_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module JKFF_sim

@@ -1,10 +1,14 @@
-Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
-------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
-| Date         : Thu Nov  8 08:55:04 2018
-| Host         : eceimage.localdomain running 64-bit CentOS Linux release 7.5.1804 (Core)
-| Command      : report_drc
-------------------------------------------------------------------------------------------
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue Mar 26 06:34:38 2019
+| Host         : eceimage.localdomain running 64-bit CentOS Linux release 7.6.1810 (Core)
+| Command      : report_drc -file counter_drc_routed.rpt -pb counter_drc_routed.pb -rpx counter_drc_routed.rpx
+| Design       : counter
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------
 
 Report DRC
 
@@ -21,6 +25,12 @@ Table of Contents
            Ruledeck: default
              Max violations: <unlimited>
              Violations found: 3
++----------+----------+-----------------------------------------------------+------------+
+| Rule     | Severity | Description                                         | Violations |
++----------+----------+-----------------------------------------------------+------------+
+| CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| PDRC-153 | Warning  | Gated clock check                                   | 2          |
++----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -39,7 +49,7 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net cd/clkb is a gated clock net sourced by a combinational pin cd/q_reg_i_1__0/O, cell cd/q_reg_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net cd/clkb is a gated clock net sourced by a combinational pin cd/q_reg_i_1__7/O, cell cd/q_reg_i_1__7. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#2 Warning

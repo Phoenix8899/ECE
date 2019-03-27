@@ -1,16 +1,16 @@
-Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
--------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
-| Date             : Thu Nov  8 08:55:04 2018
-| Host             : eceimage.localdomain running 64-bit CentOS Linux release 7.5.1804 (Core)
-| Command          : report_power -file counter_power_routed.rpt -pb counter_power_summary_routed.pb
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date             : Tue Mar 26 06:34:40 2019
+| Host             : eceimage.localdomain running 64-bit CentOS Linux release 7.6.1810 (Core)
+| Command          : report_power -file counter_power_routed.rpt -pb counter_power_summary_routed.pb -rpx counter_power_routed.rpx
 | Design           : counter
 | Device           : xc7a35tcpg236-1
 | Design State     : routed
 | Grade            : commercial
 | Process          : typical
 | Characterization : Production
--------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------
 
 Power Report
 
@@ -29,18 +29,21 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+-------+
-| Total On-Chip Power (W)  | 0.073 |
-| Dynamic (W)              | 0.001 |
-| Device Static (W)        | 0.072 |
-| Effective TJA (C/W)      | 5.0   |
-| Max Ambient (C)          | 84.6  |
-| Junction Temperature (C) | 25.4  |
-| Confidence Level         | Low   |
-| Setting File             | ---   |
-| Simulation Activity File | ---   |
-| Design Nets Matched      | NA    |
-+--------------------------+-------+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 0.073        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.001        |
+| Device Static (W)        | 0.072        |
+| Effective TJA (C/W)      | 5.0          |
+| Max Ambient (C)          | 84.6         |
+| Junction Temperature (C) | 25.4         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
 
 
 1.1 On-Chip Components
@@ -50,12 +53,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      103 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       18 |     20800 |            0.09 |
-|   CARRY4       |    <0.001 |        6 |      8150 |            0.07 |
-|   Register     |    <0.001 |       42 |     41600 |            0.10 |
+| Slice Logic    |    <0.001 |      112 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       19 |     20800 |            0.09 |
+|   CARRY4       |    <0.001 |        8 |      8150 |            0.10 |
+|   Register     |    <0.001 |       49 |     41600 |            0.12 |
 |   Others       |     0.000 |       34 |       --- |             --- |
-| Signals        |    <0.001 |       68 |       --- |             --- |
+| Signals        |    <0.001 |       75 |       --- |             --- |
 | I/O            |    <0.001 |       11 |       106 |           10.38 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.073 |          |           |                 |
@@ -93,7 +96,7 @@ Table of Contents
 | Design implementation state | High       | Design is routed                                      |                                                                                                                    |
 | Clock nodes activity        | Low        | User specified less than 75% of clocks                | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
 | I/O nodes activity          | Medium     | More than 5% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
-| Internal nodes activity     | High       | User specified more than 25% of internal nodes        |                                                                                                                    |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes        | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
 | Device models               | High       | Device models are Production                          |                                                                                                                    |
 |                             |            |                                                       |                                                                                                                    |
 | Overall confidence level    | Low        |                                                       |                                                                                                                    |
@@ -140,35 +143,35 @@ Table of Contents
 | counter              |    <0.001 |
 |   cd                 |    <0.001 |
 |   someThing[0].stage |    <0.001 |
-|     d1               |    <0.001 |
+|     df1              |    <0.001 |
 |       d1             |    <0.001 |
 |       d2             |    <0.001 |
 |   someThing[1].stage |    <0.001 |
-|     d1               |    <0.001 |
+|     df1              |    <0.001 |
 |       d1             |    <0.001 |
 |       d2             |    <0.001 |
 |   someThing[2].stage |    <0.001 |
-|     d1               |    <0.001 |
+|     df1              |    <0.001 |
 |       d1             |    <0.001 |
 |       d2             |    <0.001 |
 |   someThing[3].stage |    <0.001 |
-|     d1               |    <0.001 |
+|     df1              |    <0.001 |
 |       d1             |    <0.001 |
 |       d2             |    <0.001 |
 |   someThing[4].stage |    <0.001 |
-|     d1               |    <0.001 |
+|     df1              |    <0.001 |
 |       d1             |    <0.001 |
 |       d2             |    <0.001 |
 |   someThing[5].stage |    <0.001 |
-|     d1               |    <0.001 |
+|     df1              |    <0.001 |
 |       d1             |    <0.001 |
 |       d2             |    <0.001 |
 |   someThing[6].stage |    <0.001 |
-|     d1               |    <0.001 |
+|     df1              |    <0.001 |
 |       d1             |    <0.001 |
 |       d2             |    <0.001 |
 |   someThing[7].stage |    <0.001 |
-|     d1               |    <0.001 |
+|     df1              |    <0.001 |
 |       d1             |    <0.001 |
 |       d2             |    <0.001 |
 +----------------------+-----------+

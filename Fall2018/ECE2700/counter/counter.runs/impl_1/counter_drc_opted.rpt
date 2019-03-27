@@ -1,10 +1,14 @@
-Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
-------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
-| Date         : Thu Nov  8 08:54:53 2018
-| Host         : eceimage.localdomain running 64-bit CentOS Linux release 7.5.1804 (Core)
-| Command      : report_drc
-------------------------------------------------------------------------------------------
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue Mar 26 06:34:20 2019
+| Host         : eceimage.localdomain running 64-bit CentOS Linux release 7.6.1810 (Core)
+| Command      : report_drc -file counter_drc_opted.rpt -pb counter_drc_opted.pb -rpx counter_drc_opted.rpx
+| Design       : counter
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------
 
 Report DRC
 
@@ -21,6 +25,11 @@ Table of Contents
            Ruledeck: default
              Max violations: <unlimited>
              Violations found: 1
++----------+----------+-----------------------------------------------------+------------+
+| Rule     | Severity | Description                                         | Violations |
++----------+----------+-----------------------------------------------------+------------+
+| CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
++----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------

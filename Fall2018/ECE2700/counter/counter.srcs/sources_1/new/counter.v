@@ -30,7 +30,7 @@ module counter(
     wire tempClk;
     wire cdOut;
     
-    ClockDivider cd(.clkin(clk),.clkout(cdOut));
+    ClockDivider cd(.clkIn(clk),.clkOut(cdOut));
  
     genvar i;
         generate
@@ -41,14 +41,14 @@ module counter(
                     assign J[i] = incr&~rst;
                     assign K[i] = J[i]|rst;
                     assign tempClk = cdOut & (incr | rst);
-                    JKFF stage(.J(J[i]),.K(K[i]),.clk(tempClk),.Q(Q[i]));
+                    JKFF stage(.j(J[i]),.k(K[i]),.clk(tempClk),.q(Q[i]));
                 end
                 else 
                 begin
                     assign J[i] = J[i-1] & Q[i-1] & ~rst;
                     assign K[i] = J[i]|rst;
                     assign tempClk = cdOut & (incr | rst);
-                    JKFF stage(.J(J[i]),.K(K[i]),.clk(tempClk),.Q(Q[i]));                
+                    JKFF stage(.j(J[i]),.k(K[i]),.clk(tempClk),.q(Q[i]));                
                 end
             end
         endgenerate

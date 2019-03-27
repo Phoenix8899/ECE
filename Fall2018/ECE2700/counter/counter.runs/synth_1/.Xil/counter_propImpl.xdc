@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/ecestudent/ECE2700/counter/counter.srcs/constrs_1/imports/ECE2700/Basys3_Master.xdc rfile:../../../counter.srcs/constrs_1/imports/ECE2700/Basys3_Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/ecestudent/ECE/Fall2018/ECE2700/counter/counter.srcs/constrs_1/imports/ECE3700/Basys3_Master.xdc rfile:../../../counter.srcs/constrs_1/imports/ECE3700/Basys3_Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports clk]
 set_property src_info {type:XDC file:1 line:47 export:INPUT save:INPUT read:READ} [current_design]

@@ -1,8 +1,8 @@
-Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
-| Date         : Thu Nov  8 08:54:54 2018
-| Host         : eceimage.localdomain running 64-bit CentOS Linux release 7.5.1804 (Core)
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue Mar 26 06:34:23 2019
+| Host         : eceimage.localdomain running 64-bit CentOS Linux release 7.6.1810 (Core)
 | Command      : report_control_sets -verbose -file counter_control_sets_placed.rpt
 | Design       : counter
 | Device       : xc7a35t
@@ -13,45 +13,57 @@ Control Set Information
 Table of Contents
 -----------------
 1. Summary
-2. Flip-Flop Distribution
-3. Detailed Control Set Information
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
 
 1. Summary
 ----------
 
-+-------------------------------------------------------------------+-------+
-|                               Status                              | Count |
-+-------------------------------------------------------------------+-------+
-| Number of unique control sets                                     |     4 |
-| Minimum Number of register sites lost to control set restrictions |     6 |
-+-------------------------------------------------------------------+-------+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     4 |
+| Unused register locations in slices containing registers |     6 |
++----------------------------------------------------------+-------+
 
 
-2. Flip-Flop Distribution
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|    16+ |            3 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
 -------------------------
 
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              18 |            5 |
+| No           | No                    | No                     |              34 |            5 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              24 |            6 |
+| No           | Yes                   | No                     |              64 |            8 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
-3. Detailed Control Set Information
+4. Detailed Control Set Information
 -----------------------------------
 
 +----------------+---------------+------------------+------------------+----------------+
 |  Clock Signal  | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +----------------+---------------+------------------+------------------+----------------+
 |  clk_IBUF_BUFG |               |                  |                1 |              2 |
-|  cd/clkb       |               |                  |                2 |              8 |
-|  cd/tempClk    |               |                  |                2 |              8 |
-|  clk_IBUF_BUFG |               | cd/clkout        |                6 |             24 |
+|  cd/tempClk    |               |                  |                2 |             16 |
+|  cd/clkb       |               |                  |                2 |             16 |
+|  clk_IBUF_BUFG |               | cd/clear         |                8 |             64 |
 +----------------+---------------+------------------+------------------+----------------+
 
 
