@@ -2,16 +2,14 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Fri Mar 22 17:57:44 2019
-# Process ID: 18613
+# Start of session at: Fri Mar 29 15:37:25 2019
+# Process ID: 4585
 # Current directory: /home/phoenix8899/ECE
 # Command line: vivado
 # Log file: /home/phoenix8899/ECE/vivado.log
 # Journal file: /home/phoenix8899/ECE/vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project /home/phoenix8899/ECE/Spring2019/ECE3700/PWM/PWM.xpr
+open_project /home/phoenix8899/Sine_Synth/Sine_Synth.xpr
 update_compile_order -fileset sources_1
-launch_simulation
-source PWM_sigTest.tcl
-close_sim
+save_project_as scales /home/phoenix8899/ECE/Spring2019/ECE3700/scales -force
