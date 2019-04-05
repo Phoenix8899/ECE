@@ -1,9 +1,0 @@
-0.6
-2018.3
-Dec  6 2018
-23:39:36
-/home/phoenix8899/ECE/Spring2019/ECE3700/Delta_Sigma_Modulator/Delta_Sigma_Modulator.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
-/home/phoenix8899/ECE/Spring2019/ECE3700/Delta_Sigma_Modulator/Delta_Sigma_Modulator.srcs/sim_1/new/DSM_test.v,1554337008,verilog,,,,DSM_test,,,,,,,,
-/home/phoenix8899/ECE/Spring2019/ECE3700/Delta_Sigma_Modulator/Delta_Sigma_Modulator.srcs/sources_1/imports/new/wavegen_lut.v,1551919515,verilog,,/home/phoenix8899/ECE/Spring2019/ECE3700/Delta_Sigma_Modulator/Delta_Sigma_Modulator.srcs/sim_1/new/DSM_test.v,,lut,,,,,,,,
-/home/phoenix8899/ECE/Spring2019/ECE3700/Delta_Sigma_Modulator/Delta_Sigma_Modulator.srcs/sources_1/new/DSM_Top.v,1554336743,verilog,,/home/phoenix8899/ECE/Spring2019/ECE3700/Delta_Sigma_Modulator/Delta_Sigma_Modulator.srcs/sources_1/new/Delta_sigma_modulator.v,,DSM_Top,,,,,,,,
-/home/phoenix8899/ECE/Spring2019/ECE3700/Delta_Sigma_Modulator/Delta_Sigma_Modulator.srcs/sources_1/new/Delta_sigma_modulator.v,1554338411,verilog,,/home/phoenix8899/ECE/Spring2019/ECE3700/Delta_Sigma_Modulator/Delta_Sigma_Modulator.srcs/sources_1/imports/new/wavegen_lut.v,,Delta_sigma_modulator,,,,,,,,
