@@ -1,1 +1,0 @@
--wto "b1497cfb3dc3435d8af452271cdd279f" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "DSM_test_behav" "xil_defaultlib.DSM_test" "xil_defaultlib.glbl" -log "elaborate.log" 

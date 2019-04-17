@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../DSM_junk.srcs/sources_1/new/DSM_Top.v" \
+"../../../../DSM_junk.srcs/sources_1/new/Delta_sigma_modulator.v" \
+"../../../../DSM_junk.srcs/sources_1/imports/new/wavegen_lut.v" \
+"../../../../DSM_junk.srcs/sim_1/new/DSM_test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
