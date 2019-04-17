@@ -1,0 +1,275 @@
+15:24:52 INFO  : Registering command handlers for SDK TCF services
+15:24:53 INFO  : Launching XSCT server: xsct -n -interactive /home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.sdk/temp_xsdb_launch_script.tcl
+15:24:55 INFO  : XSCT server has started successfully.
+15:24:55 INFO  : Successfully done setting XSCT server connection channel  
+15:24:55 INFO  : Successfully done setting SDK workspace  
+15:24:55 INFO  : Processing command line option -hwspec /home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.sdk/ublaze_wrapper.hdf.
+15:44:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:44:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:44:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A" && level==0} -index 0' command is executed.
+15:44:32 INFO  : FPGA configured successfully with bitstream "/home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.sdk/ublaze_wrapper_hw_platform_0/download.bit"
+17:25:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:25:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A" && level==0} -index 0' command is executed.
+17:25:35 INFO  : FPGA configured successfully with bitstream "/home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.sdk/ublaze_wrapper_hw_platform_0/download.bit"
+17:28:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A" && level==0} -index 0' command is executed.
+17:28:03 INFO  : 'fpga -state' command is executed.
+17:28:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:28:03 INFO  : Jtag cable 'Digilent Basys3 210183A6F4A7A' is selected.
+17:28:03 INFO  : 'jtag frequency' command is executed.
+17:28:03 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:28:03 INFO  : Context for processor 'microblaze_0' is selected.
+17:28:03 INFO  : System reset is completed.
+17:28:06 INFO  : 'after 3000' command is executed.
+17:28:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A"} -index 0
+rst -system
+after 3000
+----------------End of Script----------------
+
+17:28:06 INFO  : Memory regions updated for context MicroBlaze #0
+17:28:06 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:28:06 INFO  : Launch script is exported to file '/home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_on_local.tcl'
+17:30:28 INFO  : Disconnected from the channel tcfchan#1.
+17:30:32 ERROR : no targets found with "jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A" && level==0". available targets:
+  1  xc7a35t
+     2  MicroBlaze Debug Module at USER2
+        3* MicroBlaze #0 (External debug request)
+17:30:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A" && level==0} -index 0' command is executed.
+17:30:51 INFO  : 'fpga -state' command is executed.
+17:30:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:30:51 INFO  : Jtag cable 'Digilent Basys3 210183A6F4A7A' is selected.
+17:30:51 INFO  : 'jtag frequency' command is executed.
+17:30:51 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:30:51 INFO  : Context for processor 'microblaze_0' is selected.
+17:30:51 INFO  : System reset is completed.
+17:30:54 INFO  : 'after 3000' command is executed.
+17:30:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A"} -index 0
+rst -system
+after 3000
+----------------End of Script----------------
+
+17:30:54 INFO  : Memory regions updated for context MicroBlaze #0
+17:30:54 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:30:54 INFO  : Launch script is exported to file '/home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_on_local.tcl'
+17:32:01 INFO  : Disconnected from the channel tcfchan#2.
+17:32:05 ERROR : no targets found with "jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A" && level==0". available targets:
+  1  xc7a35t
+     2  MicroBlaze Debug Module at USER2
+        3* MicroBlaze #0 (Running)
+17:32:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A" && level==0} -index 0' command is executed.
+17:32:23 INFO  : 'fpga -state' command is executed.
+17:32:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:32:24 INFO  : Jtag cable 'Digilent Basys3 210183A6F4A7A' is selected.
+17:32:24 INFO  : 'jtag frequency' command is executed.
+17:32:24 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:32:27 ERROR : no targets found with "name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A"". available targets:
+  1* xc7a35t
+17:32:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A"} -index 0
+----------------End of Script----------------
+
+17:33:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A" && level==0} -index 0' command is executed.
+17:33:39 INFO  : 'fpga -state' command is executed.
+17:33:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:33:40 INFO  : Jtag cable 'Digilent Basys3 210183A6F4A7A' is selected.
+17:33:40 INFO  : 'jtag frequency' command is executed.
+17:33:40 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:33:43 ERROR : no targets found with "name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A"". available targets:
+  1* xc7a35t
+17:33:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A"} -index 0
+----------------End of Script----------------
+
+17:35:48 INFO  : Registering command handlers for SDK TCF services
+17:35:49 INFO  : Launching XSCT server: xsct -n -interactive /home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.sdk/temp_xsdb_launch_script.tcl
+17:35:51 INFO  : XSCT server has started successfully.
+17:35:51 INFO  : Successfully done setting XSCT server connection channel  
+17:35:51 INFO  : Successfully done setting SDK workspace  
+17:35:51 INFO  : Processing command line option -hwspec /home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.sdk/ublaze_wrapper.hdf.
+17:35:51 INFO  : Checking for hwspec changes in the project ublaze_wrapper_hw_platform_0.
+17:36:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:37:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:37:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A" && level==0} -index 0' command is executed.
+17:37:12 INFO  : FPGA configured successfully with bitstream "/home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.sdk/ublaze_wrapper_hw_platform_0/download.bit"
+17:37:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A" && level==0} -index 0' command is executed.
+17:37:29 INFO  : 'fpga -state' command is executed.
+17:37:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:37:30 INFO  : Jtag cable 'Digilent Basys3 210183A6F4A7A' is selected.
+17:37:30 INFO  : 'jtag frequency' command is executed.
+17:37:30 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:37:30 INFO  : Context for processor 'microblaze_0' is selected.
+17:37:30 INFO  : System reset is completed.
+17:37:33 INFO  : 'after 3000' command is executed.
+17:37:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A"} -index 0
+rst -system
+after 3000
+----------------End of Script----------------
+
+17:37:33 INFO  : Memory regions updated for context MicroBlaze #0
+17:37:33 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:37:33 INFO  : Launch script is exported to file '/home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_on_local.tcl'
+17:38:46 INFO  : Disconnected from the channel tcfchan#1.
+17:38:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A" && level==0} -index 0' command is executed.
+17:38:47 INFO  : 'fpga -state' command is executed.
+17:38:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:38:47 INFO  : Jtag cable 'Digilent Basys3 210183A6F4A7A' is selected.
+17:38:47 INFO  : 'jtag frequency' command is executed.
+17:38:47 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:38:47 INFO  : Context for processor 'microblaze_0' is selected.
+17:38:48 INFO  : System reset is completed.
+17:38:51 INFO  : 'after 3000' command is executed.
+17:38:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A"} -index 0
+rst -system
+after 3000
+----------------End of Script----------------
+
+17:38:51 INFO  : Memory regions updated for context MicroBlaze #0
+17:38:51 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:38:51 INFO  : Launch script is exported to file '/home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_on_local.tcl'
+17:39:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:39:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A" && level==0} -index 0' command is executed.
+17:39:17 INFO  : FPGA configured successfully with bitstream "/home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.sdk/ublaze_wrapper_hw_platform_0/download.bit"
+17:39:34 INFO  : Disconnected from the channel tcfchan#2.
+17:39:38 ERROR : no targets found with "jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A" && level==0". available targets:
+  1* xc7a35t
+     2  MicroBlaze Debug Module at USER2
+        3  MicroBlaze #0 (Running)
+17:39:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:40:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:41:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:41:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A" && level==0} -index 0' command is executed.
+17:41:07 INFO  : FPGA configured successfully with bitstream "/home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.sdk/ublaze_wrapper_hw_platform_0/download.bit"
+17:41:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A" && level==0} -index 0' command is executed.
+17:41:10 INFO  : 'fpga -state' command is executed.
+17:41:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:41:10 INFO  : Jtag cable 'Digilent Basys3 210183A6F4A7A' is selected.
+17:41:10 INFO  : 'jtag frequency' command is executed.
+17:41:10 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:41:10 INFO  : Context for processor 'microblaze_0' is selected.
+17:41:10 INFO  : System reset is completed.
+17:41:13 INFO  : 'after 3000' command is executed.
+17:41:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A"} -index 0
+rst -system
+after 3000
+----------------End of Script----------------
+
+17:41:13 INFO  : Memory regions updated for context MicroBlaze #0
+17:41:13 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:41:13 INFO  : Launch script is exported to file '/home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_on_local.tcl'
+17:45:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:45:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A" && level==0} -index 0' command is executed.
+17:45:13 INFO  : FPGA configured successfully with bitstream "/home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.sdk/ublaze_wrapper_hw_platform_0/download.bit"
+17:45:21 INFO  : Disconnected from the channel tcfchan#3.
+17:45:25 ERROR : no targets found with "jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A" && level==0". available targets:
+  1* xc7a35t
+     2  MicroBlaze Debug Module at USER2
+        3  MicroBlaze #0 (Running)
+17:48:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A" && level==0} -index 0' command is executed.
+17:48:02 INFO  : 'fpga -state' command is executed.
+17:48:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:48:02 INFO  : Jtag cable 'Digilent Basys3 210183A6F4A7A' is selected.
+17:48:02 INFO  : 'jtag frequency' command is executed.
+17:48:02 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:48:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+17:48:02 INFO  : Memory regions updated for context MicroBlaze #0
+17:48:02 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:48:02 INFO  : Launch script is exported to file '/home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_ublaze_helloworld.elf_on_local.tcl'
+17:48:37 INFO  : Disconnected from the channel tcfchan#4.
+17:48:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A" && level==0} -index 0' command is executed.
+17:48:40 INFO  : 'fpga -state' command is executed.
+17:48:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:48:40 INFO  : Jtag cable 'Digilent Basys3 210183A6F4A7A' is selected.
+17:48:40 INFO  : 'jtag frequency' command is executed.
+17:48:40 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:48:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+----------------End of Script----------------
+
+17:48:40 INFO  : Memory regions updated for context MicroBlaze #0
+17:48:40 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:48:40 INFO  : Launch script is exported to file '/home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_ublaze_helloworld.elf_on_local.tcl'
+17:48:54 INFO  : Disconnected from the channel tcfchan#5.
+17:54:53 INFO  : Registering command handlers for SDK TCF services
+17:54:54 INFO  : Launching XSCT server: xsct -n -interactive /home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.sdk/temp_xsdb_launch_script.tcl
+17:54:56 INFO  : XSCT server has started successfully.
+17:54:56 INFO  : Successfully done setting XSCT server connection channel  
+17:54:56 INFO  : Successfully done setting SDK workspace  
+17:54:56 INFO  : Processing command line option -hwspec /home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.sdk/ublaze_wrapper.hdf.
+17:54:56 INFO  : Checking for hwspec changes in the project ublaze_wrapper_hw_platform_0.
+17:54:57 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1555458815000,  Project:1555449838000
+17:54:57 INFO  : The hardware specification for project 'ublaze_wrapper_hw_platform_0' is different from /home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.sdk/ublaze_wrapper.hdf.
+17:54:57 INFO  : Copied contents of /home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.sdk/ublaze_wrapper.hdf into /ublaze_wrapper_hw_platform_0/system.hdf.
+17:54:57 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+17:54:58 INFO  : 
+17:54:59 INFO  : Updating hardware inferred compiler options for ublaze_helloWorld.
+17:54:59 INFO  : Clearing existing target manager status.
+17:54:59 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+17:54:59 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+17:55:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:55:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A" && level==0} -index 0' command is executed.
+17:55:26 INFO  : FPGA configured successfully with bitstream "/home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.sdk/ublaze_wrapper_hw_platform_0/download.bit"
+17:55:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A" && level==0} -index 0' command is executed.
+17:55:43 INFO  : 'fpga -state' command is executed.
+17:55:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:55:43 INFO  : Jtag cable 'Digilent Basys3 210183A6F4A7A' is selected.
+17:55:43 INFO  : 'jtag frequency' command is executed.
+17:55:43 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:55:43 INFO  : Context for processor 'microblaze_0' is selected.
+17:55:43 INFO  : System reset is completed.
+17:55:46 INFO  : 'after 3000' command is executed.
+17:55:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A"} -index 0
+rst -system
+after 3000
+----------------End of Script----------------
+
+17:55:46 INFO  : Memory regions updated for context MicroBlaze #0
+17:55:46 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:55:46 INFO  : Launch script is exported to file '/home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_on_local.tcl'
+17:57:08 INFO  : Disconnected from the channel tcfchan#1.
+17:57:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A" && level==0} -index 0' command is executed.
+17:57:14 INFO  : 'fpga -state' command is executed.
+17:57:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:57:14 INFO  : Jtag cable 'Digilent Basys3 210183A6F4A7A' is selected.
+17:57:14 INFO  : 'jtag frequency' command is executed.
+17:57:14 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:57:14 INFO  : Context for processor 'microblaze_0' is selected.
+17:57:14 INFO  : System reset is completed.
+17:57:17 INFO  : 'after 3000' command is executed.
+17:57:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Basys3 210183A6F4A7A"} -index 0
+rst -system
+after 3000
+----------------End of Script----------------
+
+17:57:17 INFO  : Memory regions updated for context MicroBlaze #0
+17:57:17 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+17:57:17 INFO  : Launch script is exported to file '/home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_on_local.tcl'
+19:31:11 INFO  : Disconnected from the channel tcfchan#2.

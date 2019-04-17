@@ -1,0 +1,9 @@
+15:36:59 **** Build of configuration Debug for project ublaze_test ****
+make all 
+Cannot run program "make": Unknown reason
+
+Error: Program "make" not found in PATH
+PATH=[/home/phoenix8899/Xilinx/SDK/2018.3/gnu/microblaze/lin/bin:/home/phoenix8899/Xilinx/SDK/2018.3/gnu/microblaze/linux_toolchain/lin64_le/bin:/home/phoenix8899/Xilinx/SDK/2018.3/gnu/microblaze/linux_toolchain/lin64_be/bin:/home/phoenix8899/Xilinx/SDK/2018.3/gnu/arm/lin/bin:/home/phoenix8899/Xilinx/SDK/2018.3/gnu/aarch64/lin/aarch64-none/bin:/home/phoenix8899/Xilinx/SDK/2018.3/gnu/aarch64/lin/aarch64-linux/bin:/home/phoenix8899/Xilinx/SDK/2018.3/gnu/armr5/lin/gcc-arm-none-eabi/bin:/home/phoenix8899/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/home/phoenix8899/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/home/phoenix8899/Xilinx/SDK/2018.3/tps/lnx64/cmake-3.3.2/bin::/home/phoenix8899/Xilinx/SDK/2018.3/bin:/home/phoenix8899/Xilinx/SDK/2018.3/tps/lnx64/jre/bin:/home/phoenix8899/Xilinx/Vivado/2018.3/ids_lite/ISE/bin/lin64:/home/phoenix8899/Xilinx/Vivado/2018.3/bin:/home/phoenix8899/Xilinx/Vivado/2018.3/tps/lnx64/jre9.0.4/bin:/home/phoenix8899/Xilinx/Model_Composer/2018.3/bin:/home/phoenix8899/Xilinx/SDK/2018.3/gnu/microblaze/lin/bin:/home/phoenix8899/Xilinx/SDK/2018.3/gnu/arm/lin/bin:/home/phoenix8899/Xilinx/SDK/2018.3/gnu/microblaze/linux_toolchain/lin64_le/bin:/home/phoenix8899/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/home/phoenix8899/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/home/phoenix8899/Xilinx/SDK/2018.3/gnu/aarch64/lin/aarch64-linux/bin:/home/phoenix8899/Xilinx/SDK/2018.3/gnu/aarch64/lin/aarch64-none/bin:/home/phoenix8899/Xilinx/SDK/2018.3/gnu/armr5/lin/gcc-arm-none-eabi/bin:/home/phoenix8899/Xilinx/SDK/2018.3/tps/lnx64/cmake-3.3.2/bin:/home/phoenix8899/Xilinx/DocNav:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin]
+
+15:36:59 Build Finished (took 4ms)
+

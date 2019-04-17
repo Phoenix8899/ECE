@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Apr 16 15:14:59 2019
+# Process ID: 30285
+# Current directory: /home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.runs/ublaze_mdm_1_0_synth_1
+# Command line: vivado -log ublaze_mdm_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ublaze_mdm_1_0.tcl
+# Log file: /home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.runs/ublaze_mdm_1_0_synth_1/ublaze_mdm_1_0.vds
+# Journal file: /home/phoenix8899/ECE/Spring2019/ECE3700/ublase_UART_GPIO/ublase_UART_GPIO.runs/ublaze_mdm_1_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source ublaze_mdm_1_0.tcl -notrace
