@@ -42,11 +42,12 @@ SciNo SciNo::operator * (const SciNo &theSecond)
     return Result;
 }
 
-SciNo SciNo::operator + (SciNo theSecond);
+//add 
+SciNo SciNo::operator + (const SciNo &theSecond)
 {
     SciNo Result(0,0);
     Result.base = this->base + theSecond.base;
-    //Result.power = this->power + theSecond.power;
+    Result.power = this->power;
     if (Result.base > 10) //checking of the power is accurate
     {
         Result.base = Result.base /10;
@@ -55,12 +56,12 @@ SciNo SciNo::operator + (SciNo theSecond);
 
     return Result;
 }
-
-SciNo SciNo::operator + (SciNo theSecond);
+//subtract 
+SciNo SciNo::operator - (const SciNo &theSecond)
 {
     SciNo Result(0,0);
     Result.base = this->base - theSecond.base;
-    //Result.power = this->power + theSecond.power;
+    Result.power = this->power;
     if (Result.base < 1) //checking of the power is accurate
     {
         Result.base = Result.base *10;
