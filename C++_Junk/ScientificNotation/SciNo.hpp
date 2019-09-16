@@ -12,5 +12,12 @@ class SciNo
     
      SciNo (double startingBase , int startingPower);
 
+    SciNo operator  + (const SciNo &theSecond);
+    SciNo operator  - (const SciNo &theSecond);
+    SciNo operator  * (const SciNo &theSecond);
+    SciNo operator / (const SciNo &theSecond);
+
+    void print();
+
     //learn to overload opperators here
 };
