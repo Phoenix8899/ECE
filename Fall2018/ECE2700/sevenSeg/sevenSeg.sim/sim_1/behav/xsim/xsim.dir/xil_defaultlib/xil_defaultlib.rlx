@@ -1,0 +1,8 @@
+0.6
+2018.3
+Dec  6 2018
+23:39:36
+/home/phoenix8899/ECE/Fall2018/ECE2700/sevenSeg/sevenSeg.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+/home/phoenix8899/ECE/Fall2018/ECE2700/sevenSeg/sevenSeg.srcs/sim_1/new/sevSegTest.v,1567632516,verilog,,,,sevSegTest,,,,,,,,
+/home/phoenix8899/ECE/Fall2018/ECE2700/sevenSeg/sevenSeg.srcs/sources_1/new/boolSeg.v,1567632495,verilog,,/home/phoenix8899/ECE/Fall2018/ECE2700/sevenSeg/sevenSeg.srcs/sources_1/new/sevenSegTop.v,,boolSeg,,,,,,,,
+/home/phoenix8899/ECE/Fall2018/ECE2700/sevenSeg/sevenSeg.srcs/sources_1/new/sevenSegTop.v,1567632153,verilog,,/home/phoenix8899/ECE/Fall2018/ECE2700/sevenSeg/sevenSeg.srcs/sim_1/new/sevSegTest.v,,sevenSegTop,,,,,,,,

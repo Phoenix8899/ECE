@@ -50,7 +50,7 @@ module DoubbleSevenSegment(
                                     
     
     sevensegment display(
-                       .wxyz(d),
+                       .X(d),
                        .seg(temp)
                        );
                        
