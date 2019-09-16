@@ -19,11 +19,11 @@ int main ()
 
     Jedi.print();
 
-    Jedi = revenge + qwerty;
+    Jedi = revenge + qwerty; //not sure if the math is right
 
     Jedi.print();
 
-    Jedi = revenge - qwerty;
+    Jedi = revenge - qwerty; //not sure if the math is right
 
     Jedi.print();
 
