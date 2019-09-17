@@ -28,7 +28,7 @@ int main()
     }
 
     std::cout << otherNum << "/" << num << std::endl;
-    std::cout << "factorinator" << factors << std::endl;
+    std::cout << "factorinator " << factors << std::endl;
 
  return 0;   
 }
